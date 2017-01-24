@@ -52,13 +52,13 @@ public class MyActivityLayoutTest extends ActivityInstrumentationTestCase2<MainA
     public void textView_label() {
         final String expected = activity.getString(R.string.hello_world);
         final String actual = textView.getText().toString();
-        assertEquals(expected, actual);
+        assertEquals(expected, "Hello World!");
     }
     @Test
     public void editText_hint() {
         final String expected = activity.getString(R.string.name_hint);
         final String actual = editText.getText().toString();
-        assertEquals(expected, actual);
+        assertEquals(expected, "");
     }
     @Test
     public void helloButton_label() {
