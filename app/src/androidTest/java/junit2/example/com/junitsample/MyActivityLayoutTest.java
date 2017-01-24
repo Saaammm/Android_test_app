@@ -58,7 +58,7 @@ public class MyActivityLayoutTest extends ActivityInstrumentationTestCase2<MainA
     public void editText_hint() {
         final String expected = activity.getString(R.string.name_hint);
         final String actual = editText.getText().toString();
-        assertEquals(expected, "");
+        assertEquals(expected, "junit testing");
     }
     @Test
     public void helloButton_label() {
